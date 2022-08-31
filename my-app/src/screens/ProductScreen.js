@@ -77,7 +77,7 @@ function ProductScreen({ match, history }) {
             <Col md={6}>
               <Card>
                 <Card.Img
-                  className="r1"
+                  className="h-50"
                   src={product.images}
                   alt={product.name}
                   fluid

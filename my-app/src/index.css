@@ -2,10 +2,7 @@ main{
     min-height: 80vh;
 }
 
-.r1{
-    width: 700px !important;
-    height: 700px !important;
-}
+
 
 .rating span{
     margin: 0.1rem;

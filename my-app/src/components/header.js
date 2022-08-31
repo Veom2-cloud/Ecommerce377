@@ -13,17 +13,17 @@ function Header() {
   };
   return (
     <header>
-      <Navbar bg="success" variant="dark" expand="lg" collapseOnSelect>
+      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container fluid>
         <LinkContainer to="/">
-            <Navbar.Brand>Furniture Market</Navbar.Brand>
+            <Navbar.Brand className="ms-60">Ecommerce Website</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
           <SearchBox />
             <Nav
               className="ms-auto"
-              style={{ maxHeight: "50px" }}
+              style={{ maxHeight: "10px !important"  }}
               navbarScroll
             >
                <LinkContainer to="/cart">
