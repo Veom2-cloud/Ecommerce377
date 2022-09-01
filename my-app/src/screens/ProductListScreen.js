@@ -74,7 +74,7 @@ function ProductListScreen({ history, match }) {
           <h1>Products</h1>
         </Col>
         <Col className="text-center">
-          <Button className="my-3" onClick={CreateProductHandler}>
+          <Button className="" onClick={CreateProductHandler}>
             <i className="fa fa-plus"> </i> Create Product
           </Button>
         </Col>
