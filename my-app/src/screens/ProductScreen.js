@@ -19,6 +19,8 @@ import {
 } from "../actions/productActions";
 import { PRODUCT_CREATE_REVIEW_RESET } from "../constants/productConstants";
 
+
+
 function ProductScreen({ match, history }) {
   const [qty, setQty] = useState(1);
   const [rating, setRating] = useState(0);
@@ -74,18 +76,20 @@ function ProductScreen({ match, history }) {
       ) : (
         <div>
           <Row>
-            <Col md={6}>
-              <Card>
+            <Col md={4}>
+              <Card className="hh1">
+                
                 <Card.Img
-                  className="h-50"
+                  className="hh mt-4 "
                   src={product.images}
                   alt={product.name}
-                  fluid
+                  
                 />
+                
               </Card>
             </Col>
-            <Col md={6}>
-              <Card className="m-3">
+            <Col md={8}>
+              <Card className="">
                 <ListGroup variant="flush">
                   <ListGroup.Item>
                     <h3>{product.name}</h3>
@@ -108,7 +112,7 @@ function ProductScreen({ match, history }) {
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
-                      <Col>
+                      <Col xs="auto">
                         <strong>${product.price}</strong>
                       </Col>
                     </Row>
@@ -116,7 +120,7 @@ function ProductScreen({ match, history }) {
                   <ListGroup.Item>
                     <Row>
                       <Col>Status:</Col>
-                      <Col>
+                      <Col xs="auto">
                         {product.countInStock > 0 ? "InStock" : "Out of Stock"}
                       </Col>
                     </Row>
@@ -172,11 +176,7 @@ function ProductScreen({ match, history }) {
                   ))}
                 </ListGroup>
               </Card>
-            </Col>
-          </Row>
-
-          <Row>
-            <Col md={6}>
+            <br></br>
               <Card>
                 <ListGroup.Item>
                   <h4>Write a Review</h4>
@@ -218,7 +218,7 @@ function ProductScreen({ match, history }) {
                         disabled={loadingProductReview}
                         type="submit"
                         variant="primary"
-                        className="px-2"
+                        className="px-2 mt-3"
                       >
                         Submit
                       </Button>
